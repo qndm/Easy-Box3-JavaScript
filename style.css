@@ -1,0 +1,94 @@
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    transition: background-color 0.2s, border-radius 0.2s;
+}
+
+a {
+    color: #000000;
+    background-color: #adadad;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    transition: background-color 0.2s, border-radius 0.2s;
+}
+
+button:active,
+a:active {
+    background-color: lightgray;
+}
+
+html,
+body {
+    height: 95%;
+    margin: 0px;
+}
+
+input,
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    transition: border-radius 0.5s;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+button:hover,
+a:hover {
+    border-radius: 0px;
+}
+
+input:disabled,
+select:disabled,
+button:disabled {
+    border-radius: 5px;
+    color: #808080;
+    background-color: #adadad;
+    border: 1px solid #808080;
+}
+
+input:focus,
+a,
+select,
+button {
+    border: 1px solid #555555;
+}
+
+form,
+button,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 2px;
+}
+
+.telescopic {
+    white-space: nowrap;
+    overflow: auto;
+    text-overflow: clip;
+    padding: 5px;
+    border: 1px solid #555555;
+    width: 10px;
+    border-radius: 5px;
+    transition: width 0.5s, border-radius 0.5s;
+}
+
+.telescopic:hover {
+    width: 100%;
+    border-radius: 0px;
+}
