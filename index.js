@@ -18,8 +18,11 @@ for (var index in codeText) {
     if ((text == '/' && previousText == '*') || text == ';' || (text == '}' && nextText != ',') || text == '{') {
         if (!inNotes || (text != '{' && text != '}')) {
             document.getElementById('code').innerHTML += (text + '<br>');
+            for (var i = 0; i < layers; i++) document.getElementById('code').innerHTML += '&#160;&#160;&#160;&#160;';
         } else document.getElementById('code').innerHTML += text;
     } else if ((text == '*' && previousText != '/' && previousText != '*') && inNotes) {
-        document.getElementById('code').innerHTML += ('<br>' + text);
+        document.getElementById('code').innerHTML += '<br>';
+        for (var i = 0; i < layers; i++) document.getElementById('code').innerHTML += '&#160;&#160;&#160;&#160;';
+        document.getElementById('code').innerHTML += text;
     } else document.getElementById('code').innerHTML += text;
 }
